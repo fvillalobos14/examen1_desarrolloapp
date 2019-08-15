@@ -6,7 +6,7 @@ export class Weather extends Component {
 
     constructor(props) {
         super(props);
-    
+
         this.state = {
             weatherItems: [
                 { month: 'May', day: '20', max: '38', min: '18' },
@@ -15,23 +15,15 @@ export class Weather extends Component {
                 { month: 'May', day: '23', max: '31', min: '19' }
             ]
         };
-
-        this.showMaxMin = this.showMaxMin.bind(this)
     }
 
-    showMaxMin(item)
-    {
-
-    }
-
-    //need to work on this part; haven't placed proper variables, but at least binding
     render() {
         return (
             <div>
                 <Card>
-                    <h2>{this.state.weatherItems.find(w => w.day === this.props.weatherDay).max}</h2> 
+                    <h2>{this.state.weatherItems.find(w => w.day === this.props.weatherDay).max}</h2>
                 </Card>
-                <br/>
+                <br />
                 <Card>
                     <h2>{this.state.weatherItems.find(w => w.day === this.props.weatherDay).min}</h2>
                 </Card>
