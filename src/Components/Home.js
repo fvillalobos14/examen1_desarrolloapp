@@ -10,8 +10,8 @@ export class Home extends Component {
         this.state = {
             welcomeTitle: 'Bienvenido',
             appTitle: 'Weather App',
-            month: 0,
-            day: 0
+            month: 'May',
+            day: '20'
         };
 
         this.switchTitles = this.switchTitles.bind(this)
