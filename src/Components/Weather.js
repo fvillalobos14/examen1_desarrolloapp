@@ -21,11 +21,11 @@ export class Weather extends Component {
         return (
             <div>
                 <Card>
-                    <h2>{this.state.weatherItems.find(w => w.day === this.props.weatherDay).max}</h2>
+                    <h2>Max: {this.state.weatherItems.find(w => w.day === this.props.weatherDay).max}</h2>
                 </Card>
                 <br />
                 <Card>
-                    <h2>{this.state.weatherItems.find(w => w.day === this.props.weatherDay).min}</h2>
+                    <h2>Min: {this.state.weatherItems.find(w => w.day === this.props.weatherDay).min}</h2>
                 </Card>
             </div>
         )
